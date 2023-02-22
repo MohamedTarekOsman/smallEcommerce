@@ -1,0 +1,9 @@
+
+.rower{
+    width: 100%;
+    display: flex;
+    width: 18em;
+    margin-top: 5em;
+    margin-left: 2.5em;
+    background-image: linear-gradient(rgb(83, 81, 204), rgb(228, 228, 161));
+}
