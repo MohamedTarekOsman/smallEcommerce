@@ -21,9 +21,7 @@ function App() {
         <Route path="/productes" element={<Call2 />} />
         <Route path="/productes/:id" element={<Productes_Content />} />
         <Route path="/about" element={<Call3 />} />
-        {/* 
-        
-        <Counter /> */}
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </div>

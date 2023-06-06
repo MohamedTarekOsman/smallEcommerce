@@ -3,7 +3,7 @@
 import axios from "axios";
 import React, { useEffect ,useState} from 'react'
 import { useParams } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 export default function () {
 
@@ -24,9 +24,15 @@ export default function () {
     //////////////////////////
     return (
       <div style={{ minHeight: "83vh" }}>
+        <Link
+          to={`/productes`}
+          className="btn btn-primary"
+          style={{ width: "20%",display:"block"}}>
+          back
+        </Link>
         <img
           src={`${products.images}`}
-          style={{marginLeft:"15%",padding:"1%" ,width:"70%"}}
+          style={{ marginLeft: "15%", padding: "1%", width: "70%" ,height:"70vh"}}
         />
         <div style={{ fontSize: "30px" }}>
           <p

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from 'react-router-dom';
 import "./Cards.css";
@@ -27,8 +26,7 @@ export default class Cards extends Component {
           <Link
             to={`/productes/${id}`}
             className="btn btn-success"
-            style={{ width: "100%", marginBottom: "1em" }}
-          >
+            style={{ width: "100%", marginBottom: "1em" }}>
             See Product
           </Link>
         </Card>

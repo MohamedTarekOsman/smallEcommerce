@@ -5,9 +5,10 @@ export default function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState("");
 
-     const handleSubmit = (event) => {
-       event.preventDefault();
-     };
+
+      const handleSubmit = (event) => {
+            event.preventDefault();
+      };
   return (
     <form onSubmit={handleSubmit} className="form1">
       <div className="d1">
@@ -32,11 +33,20 @@ export default function Login() {
           onChange={(event) => setPassword(event.target.value)}
         />
       </div>
-      <Link to="/home">
-        <button type="submit" className="submit1">
-          Log In
-        </button>
-      </Link>
+
+      {username === "admin" && password === "admin" ? (
+        <Link to="./home">
+          <button type="submit" className="submit1">
+            Log In
+          </button>
+        </Link>
+      ) : (
+        <Link to="">
+          <button type="submit" className="submit1">
+            Log In
+          </button>
+        </Link>
+      )}
     </form>
   );
 }

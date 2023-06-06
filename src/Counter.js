@@ -54,33 +54,26 @@ export default class Counter extends Component {
             src={require("./assets/best-about-us-pages.jpg")}
             alt="about-us"
             style={{
-              padding: "5%",
-              textAlign: "center",
+                  width:"60%",
+                  height:"50%",
+                  margin:"auto",
+                  paddingTop:"5%"
             }}
           ></img>
-          <div
-            style={{
-              textOverflow: "ellipsis",
-              overflow: "auto",
-              paddingLeft: "5%",
-            }}
-          >
             <p
               style={{
-                fontSize: "25px",
+                fontSize: "125%",
                 color: "white",
+                textAlign:"center",
+                padding:"5%",
               }}
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat,
               soluta! Cum tempora et sequi quas! Voluptatibus, reiciendis quae
               id quos tenetur commodi rem asperiores, sint fugiat optio facilis
               totam voluptates.LoremLorem ipsum dolor sit amet consectetur,
-              adipisicingtotam voluptates.LoremLorem ipsum dolor sit amet
-              consectetur, adipisicingtotam voluptates.LoremLorem ipsum dolor
-              sit amet consectetur, adipisicingtotam voluptates.LoremLorem ipsum
-              dolor sit amet consectetur, adipisicing
+              adipisicingtotam voluptates.
             </p>
-          </div>
         </Row>
       </>
     );

@@ -6,7 +6,7 @@ export default function Error() {
         ()=>
         {
             setTimeout(() => {
-                navigate("/home");
+                navigate("/");
             }, 1000);
             
         }
